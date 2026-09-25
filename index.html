@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Interativo - Perfil Gamer</title>
+    
+    <!-- Google Fonts com fonte de reserva (fallback: sans-serif) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tag semântica: header -->
+    <header>
+        <h1>Cartão de Perfil Gamer</h1>
+    </header>
+
+    <!-- Tag semântica: main -->
+    <main class="container">
+        <!-- Tag semântica: section -->
+        <section class="card">
+            <div class="card-header">
+                <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=300" alt="Avatar do Usuário" class="avatar">
+                <h2>Alex "Shadow" Silva</h2>
+                <p class="subtitle">Desenvolvedor & Gamer</p>
+            </div>
+
+            <div class="card-body">
+                <p class="description">
+                    Entusiasta de jogos de estratégia, RPGs e desenvolvimento web front-end.
+                </p>
+
+                <!-- Botões interativos -->
+                <div class="actions">
+                    <button id="like-btn" class="btn">❤️ Curtir (<span id="like-count">0</span>)</button>
+                    <button id="toggle-btn" class="btn btn-secondary">Mostrar Detalhes</button>
+                </div>
+
+                <!-- Conteúdo dinâmico manipulado pelo JS -->
+                <div id="details" class="details-section hidden">
+                    <h3>Estatísticas</h3>
+                    <ul>
+                        <li><strong>Nível:</strong> 42</li>
+                        <li><strong>Jogo Favorito:</strong> Elden Ring</li>
+                        <li><strong>Linguagem:</strong> JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Tag semântica: footer -->
+    <footer>
+        <p>&copy; 2026 - Projeto Web Design</p>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
